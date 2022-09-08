@@ -1,0 +1,272 @@
+* {
+  --red: #92010c;
+  --blue: #20aad8;
+  --black: #373435;
+  --white: #ffffff;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(var(--blue), var(--red));
+}
+
+div {
+  display: block;
+}
+
+/* Teksti tyyli */
+a {
+  font-family: 'Teko', sans-serif;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  margin: 0 auto;
+  height: 67px;
+  overflow: hidden;
+  background-color: var(--blue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 9999;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.navbar:hover {
+  opacity: 1;
+}
+
+.aBar {
+  float: left;
+  display: block;
+  background-color: var(--blue);
+  color: var(--white);
+  height: 67px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aBar:hover {
+  background: var(--white);
+  color: var(--red);
+}
+
+.aLogo {
+  margin-left: 60px;
+  float: left;
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.logo {
+  padding: 0px;
+  left: 10px;
+  top: 14px;
+  display: block;
+  overflow: hidden;
+  width: 67px;
+  height: 67px;
+  line-height: 200px;
+  opacity: 0.9;
+}
+
+.navbar li {
+  float: left;
+  position: relative;
+  display: inline;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+/* DropDown */
+.dropbtn {
+  width: 107.31px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 110.16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: 67px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.dropdown-content a {
+  color: var(--black);
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .aBar {
+  background: var(--white);
+  color: var(--red);
+}
+
+/* Container */
+.container {
+  background: var(--black);
+  width: fit-content;
+  padding: 30px;
+  margin: 267px auto 16px auto;
+  border-radius: 10px;
+}
+
+/* Container sisältö */
+.header {
+  background: var(--black);
+  width: auto;
+  text-align: center;
+  color: var(--blue);
+}
+
+/* Otsikko */
+.otsikko-pos {
+  background: var(--black);
+  width: auto;
+  height: 80px;
+  position: relative;
+}
+
+.otsikko-title {
+  position: relative;
+  display: block;
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 25px;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 80px;
+  padding: 0 10px;
+}
+
+/* Elokuvat */
+.grid-container {
+  background: var(--black);
+  width: fit-content;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-auto-rows: 300px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 0;
+  border-radius: 10px;
+  background: linear-gradient(var(--blue) , var(--black) 80%, var(--red));
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description {
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.title {
+  width: 200px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 10px;
+  color: var(--white);
+
+  display: inline-block;
+  align-self: flex-end;
+}
+
+/* Tietoa */
+.info-text{
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+/* Footer */
+.footer-pos {
+  background: var(--black);
+  width: fit-content;
+  height: 50px;
+  position: relative;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  top: 29px;
+  left: 79px;
+  width: 38px;
+}
+
+.footer-text {
+  padding-left: 30px;
+  top: 40px;
+  left: 137px;
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+}

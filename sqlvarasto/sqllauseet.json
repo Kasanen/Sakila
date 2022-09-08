@@ -1,0 +1,14 @@
+{
+    "haeKaikki": [
+        "SELECT title, description FROM film"
+    ],
+    "haeSatunnaiset": [
+        "SELECT title, description FROM film",
+        "ORDER BY RAND()",
+        "LIMIT 10"
+    ],
+    "haeKategoria": [
+        "SELECT film.title, film.description, category.name, film.length, film.rental_rate FROM film, category, film_category WHERE film.film_id = film_category.film_id AND film_category.category_id = category.category_id AND category.name = ?;"
+    ],
+    "perusavain": "film_id"
+}
